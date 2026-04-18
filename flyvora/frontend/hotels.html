@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyvora Hotels | Luxury Stays Near Airports</title>
+    <meta name="description" content="Book premium hotel rooms close to major African airports. Seamless travel, luxury comfort.">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo" id="logo" onclick="window.location.href='index.html'"><img src="Img/Logo.png" alt="Flyvora Logo"></div>
+            <div class="nav-menu">
+                <a href="about.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Flights</a>
+                <a href="hotels.html" class="nav-link active">Hotels</a>
+            </div>
+            <div class="nav-links">
+                <button class="btn-primary" id="login-nav-btn">Log In</button>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <h1 class="animate-fade">Elite Accommodations</h1>
+            <p class="animate-fade" style="animation-delay: 0.2s;">Discover premium rooms strategically located near Africa's major travel hubs.</p>
+        </header>
+
+        <main class="results-section">
+            <div id="results-grid" class="results-grid animate-fade" style="animation-delay: 0.4s;">
+                <!-- Hotel cards will be injected here via app.js -->
+            </div>
+            
+            <div id="no-flights" style="display: none; text-align: center; color: var(--text-muted); padding: 40px;">
+                <p>No hotels found for your selection. Try another location.</p>
+            </div>
+
+            <section class="african-hotels-section animate-fade" style="margin-top: 80px;">
+                <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.5rem;">Featured African Hotels</h2>
+                <div class="results-grid">
+                    <div class="hotel-card">
+                        <img src="https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&q=80&w=800" alt="Safari Lodge" class="hotel-img">
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <span class="hotel-name">Serengeti Safari Lodge</span>
+                                <span class="hotel-price">₦250,000/night</span>
+                            </div>
+                            <div class="hotel-location"><i class="fas fa-location-dot"></i> Tanzania</div>
+                            <div class="hotel-airport-info">
+                                <i class="fas fa-plane"></i> 45km from JRO International
+                            </div>
+                            <button class="btn-primary btn-book" style="width: 100%; margin-top: 15px;">Book Room</button>
+                        </div>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&q=80&w=800" alt="Cape Town" class="hotel-img">
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <span class="hotel-name">Table Mountain View</span>
+                                <span class="hotel-price">₦180,000/night</span>
+                            </div>
+                            <div class="hotel-location"><i class="fas fa-location-dot"></i> Cape Town, SA</div>
+                            <div class="hotel-airport-info">
+                                <i class="fas fa-plane"></i> 20km from CPT International
+                            </div>
+                            <button class="btn-primary btn-book" style="width: 100%; margin-top: 15px;">Book Room</button>
+                        </div>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=800" alt="Cairo" class="hotel-img">
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <span class="hotel-name">Pyramids Plateau Res.</span>
+                                <span class="hotel-price">₦95,000/night</span>
+                            </div>
+                            <div class="hotel-location"><i class="fas fa-location-dot"></i> Giza, Egypt</div>
+                            <div class="hotel-airport-info">
+                                <i class="fas fa-plane"></i> 35km from CAI International
+                            </div>
+                            <button class="btn-primary btn-book" style="width: 100%; margin-top: 15px;">Book Room</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column footer-logo-section">
+                    <div class="footer-logo"><img src="Img/Logo.png" alt="Flyvora Logo"></div>
+                    <p class="footer-desc">Flyvora - Your ultimate partner for premium flight and hotel bookings across Africa.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="index.html" class="nav-link">Book Flights</a></li>
+                        <li><a href="hotels.html" class="nav-link">Book Hotels</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="#" class="nav-link">Control Center</a></li>
+                        <li><a href="#" class="nav-link">Safety Docs</a></li>
+                        <li><a href="#" class="nav-link">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacts</h4>
+                    <p class="footer-desc">Email: hello@flyvora.com<br>Phone: +234 800 FLYVORA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Flyvora Premium Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-content">
+            <h2 style="margin-bottom: 10px;">Complete Your Booking</h2>
+            <p style="color: var(--text-muted); margin-bottom: 30px;" id="modal-flight-summary"></p>
+            
+            <form id="booking-form">
+                <input type="hidden" id="modal-flight-id">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="passenger-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="passenger-email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Seats</label>
+                    <input type="number" id="seats-booked" min="1" value="1" max="10">
+                </div>
+                <div style="display: flex; gap: 15px; margin-top: 30px;">
+                    <button type="button" class="btn-secondary" style="flex: 1;" id="close-modal">Cancel</button>
+                    <button type="submit" class="btn-primary" style="flex: 1;" id="confirm-booking-btn">Confirm & Pay</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- My Bookings Modal -->
+    <div class="modal-overlay" id="my-bookings-modal">
+        <div class="modal-content" style="max-width: 600px;">
+            <h2 style="margin-bottom: 20px;">My Bookings</h2>
+            <div class="form-group" style="display: flex; gap: 10px;">
+                <input type="email" id="search-email" placeholder="Search by your email" style="flex: 1;">
+                <button class="btn-primary" id="find-bookings-btn">Find</button>
+            </div>
+            <div id="bookings-list" style="margin-top: 20px; max-height: 300px; overflow-y: auto;">
+                <!-- Booking items -->
+            </div>
+            <button class="btn-secondary" style="width: 100%; margin-top: 20px;" id="close-bookings">Close</button>
+        </div>
+    </div>
+
+    <div class="chat-btn" id="chat-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: white;"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+    </div>
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <span>Flyvora Assistant</span>
+            <div style="width: 10px; height: 10px; background: #10b981; border-radius: 50%; box-shadow: 0 0 10px #10b981;"></div>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-msg">Hello! I'm your Flyvora AI assistant. How can I help you find your next adventure today?</div>
+        </div>
+        <div id="typing-indicator" class="typing-indicator">
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask about flights, prices, or booking...">
+            <button class="btn-primary" style="padding: 0 15px; height: 45px;" id="send-chat">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal-content">
+            <h2 style="margin-bottom: 20px;">Log In</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Log In</button>
+            </form>
+            <p style="text-align: center; margin: 15px 0; color: var(--text-muted);">
+                Don't have an account? 
+                <a href="#" id="show-register" style="color: var(--primary); text-decoration: none;">Create one</a>
+            </p>
+            <button class="btn-secondary" style="width: 100%; margin-top: 10px;" id="close-login">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal-overlay" id="register-modal">
+        <div class="modal-content">
+            <h2 style="margin-bottom: 20px;">Create Account</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="reg-username">Username</label>
+                    <input type="text" id="reg-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm-password">Confirm Password</label>
+                    <input type="password" id="reg-confirm-password" required minlength="6">
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Create Account</button>
+            </form>
+            <p style="text-align: center; margin: 15px 0; color: var(--text-muted);">
+                Already have an account? 
+                <a href="#" id="show-login" style="color: var(--primary); text-decoration: none;">Log in</a>
+            </p>
+            <button class="btn-secondary" style="width: 100%; margin-top: 10px;" id="close-register">Cancel</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
